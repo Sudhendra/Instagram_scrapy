@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-import scrapy
-from urllib.parse import urlencode
-import json
-from datetime import datetime
-
-
 def get_url(url):
     payload = {'api_key': API, 'url': url}
     proxy_url = 'http://api.scraperapi.com/?' + urlencode(payload)
